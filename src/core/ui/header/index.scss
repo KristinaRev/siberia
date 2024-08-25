@@ -1,0 +1,70 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.header {
+  background-color: config.$colors-white;
+  padding: 15px 0;
+  border-bottom: 1px solid config.$colors-gray-light;
+  z-index: 900;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: config.$font-secondary;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: left;
+    color: config.$colors-black;
+  }
+
+  &__nav{
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          white-space: nowrap;
+          color: config.$colors-black;
+          transition: 0.3s ease;
+
+          &:hover {
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+
+    a {
+      font-family: config.$font-secondary;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 36.4px;
+      text-align: left;
+      text-decoration: none;
+      color: config.$colors-black;
+      transition: 0.3s ease;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}

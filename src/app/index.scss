@@ -1,6 +1,13 @@
 @use '../core/config/scss' as config;
 @use '../core/lib/scss' as lib;
+
 @use '../core/ui/layout';
+@use '../core/ui/header';
+@use '../core/ui/container';
+@use '../core/ui/s-promo';
+@use '../core/ui/button';
+@use '../core/ui/s-benefits';
+@use '../core/ui/section';
 
 @include lib.font("OpenSans", 300, "OpenSans-Light");
 @include lib.font("OpenSans", 400, "OpenSans-Regular");

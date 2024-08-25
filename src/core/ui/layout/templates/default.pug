@@ -1,3 +1,7 @@
+//- mixins
+include ../../header/index
+
+
 doctype html
 html(lang="ru")
   meta(charset="utf-8")
@@ -11,14 +15,13 @@ html(lang="ru")
 
   body
     .layout
-      .layout__header
-        block beforeWorkarea
+      +header({mix: "layout__header"})
 
       .layout__main
         block workarea
 
       .layout__footer
         block afterWorkarea
-      
+
 
     script(src="js/index.js")

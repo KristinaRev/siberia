@@ -1,0 +1,77 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+
+.s-promo {
+  position: relative;
+  width: 100%;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-top: 1px solid config.$colors-purple;
+    width: 40%;
+    top: 0;
+  }
+
+  &:before {
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+  }
+
+  &__content {
+    display: flex;
+
+  }
+
+  &__title {
+    border-bottom: 1px solid config.$colors-purple;
+    border-right: 1px solid config.$colors-purple;
+    padding: 57px 16px 57px 0;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  h1 {
+    font-family: config.$font-secondary;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 70.2px;
+    text-align: left;
+    color: config.$colors-black;
+    max-width: 832px
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    border-top: 1px solid config.$colors-purple;
+    border-bottom: 1px solid config.$colors-gray-light;
+    width: 45%;
+  }
+
+  &__img {
+    height: 850px;
+    width: 100vw;
+    overflow: hidden;
+    border-top: 1px solid config.$colors-gray-light;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: 1.5s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

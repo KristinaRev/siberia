@@ -1,5 +1,5 @@
-@use '../core/config/scss' as config;
-@use '../core/lib/scss' as lib;
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
 
 .layout {
   display: flex;
@@ -10,7 +10,6 @@
     position: sticky;
     top: 0;
   }
-
 
   &__main {
     flex-grow: 1;

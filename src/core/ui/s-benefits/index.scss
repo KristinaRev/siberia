@@ -1,0 +1,41 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.s-benefits {
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__benefit {
+    text-align: center;
+    padding-bottom: 15px;
+    position: relative;
+    max-width: 300px;
+
+    &:nth-child(2) {
+      max-width: 410px;
+    }
+
+    span {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30.81px;
+      text-align: center;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 40px);
+      width: 80px;
+      max-width: 100%;
+      height: 1px;
+      background-color: config.$colors-purple;
+    }
+  }
+}

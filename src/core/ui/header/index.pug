@@ -1,0 +1,21 @@
+mixin header(params)
+
+    -
+        const classes = params.mix ? `header ${params.mix}` : `header`;
+
+    header(class= classes)
+        .container
+            .header__content
+                span.header__logo ООО «Сибирь»
+                nav.header__nav
+                    ul
+                        li
+                            a(href="") О компании
+                        li
+                            a(href="") Услуги
+                        li
+                            a(href="") Контакты
+                .header__contacts
+                    a(href="tel:83842900527") +7 (3842) 90-05-27
+                    a(href="tel:89236012718") +7 (923) 601-27-18
+

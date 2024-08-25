@@ -1,0 +1,14 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 min(16.4vw, 315px);
+
+  @media only screen and (max-width: config.$bp-md) {
+
+  }
+}

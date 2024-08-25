@@ -1,0 +1,25 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.button {
+  font-family: config.$font-secondary;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+  text-align: left;
+  padding: 22px 56px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: .3s ease;
+  border-radius: 100px;
+}
+
+.button._theme_purple {
+  background-color: config.$colors-purple;
+  color: config.$colors-white-siberia;
+
+  &:hover {
+    background-color: config.$colors-purple-light;
+    color: config.$colors-white;
+  }
+}
