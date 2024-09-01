@@ -1,18 +1,102 @@
 <!DOCTYPE html>
-<html class="layout" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body class="body layout__body">
-    <main class="main layout__main">
-      <h1>Hello World</h1>
-      <div class="test-2">
-        <h2>Hello world again</h2>
+<html lang="ru">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <title>ООО «Сибирь»
+  </title>
+  <body>
+    <div class="layout">
+      <header class="header layout__header">
+        <div class="container">
+          <div class="header__content"><span class="header__logo">ООО «Сибирь»</span>
+            <nav class="header__nav">
+              <ul>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#steps">Услуги</a></li>
+                <li><a href="#map">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts"><a href="tel:83842900527">+7 (3842) 90-05-27</a><a href="tel:89236012718">+7 (923) 601-27-18</a></div>
+          </div>
+        </div>
+      </header>
+      <div class="layout__main">
+        <div class="s-promo">
+          <div class="container">
+            <div class="s-promo__content">
+              <div class="s-promo__title">
+                <h1>Пункт промывки и пропарки железнодорожных цистерн</h1>
+              </div>
+              <div class="s-promo__button-container"><a class="button _theme_purple" href="http://wa.me/79236012718">Оставить заявку</a></div>
+            </div>
+          </div>
+          <div class="s-promo__img"><img src="assets/media/promo.png" alt="promo"></div>
+        </div>
+        <div class="section s-benefits">
+          <div class="container">
+            <div class="s-benefits__content">
+              <div class="s-benefits__benefit"><span>Полное соответствие ГОСТ 1510-2022</span></div>
+              <div class="s-benefits__benefit"><span>Подготовка цистерн из-под светлых и темных нефтепродуктов под налив и в ремонт</span></div>
+              <div class="s-benefits__benefit"><span>Выдача сертификатов ВУ-19, ВУ-20</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="section s-steps" id="steps">
+          <div class="container">
+            <div class="s-steps__content">
+              <div class="s-steps__side-left">
+                <div class="s-steps__title-block">
+                  <h2 class="subtitle">Основные этапы пропарки-промывки железнодорожных цистерн</h2><span class="text">Работы по подготовке железнодорожных цистерн к наливу и ремонту включают очистку внутренних поверхностей котлов цистерн от остатков ранее перевозимого нефтегруза.</span>
+                </div>
+                <div class="s-steps__steps-left">
+                  <div class="card-step s-steps__card-step _area_3"><span class="card-step__number">#3 </span><span class="card-step__text">После промывки, пропарки внутренняя поверхность котла цистерны дополнительно протирается ветошью в соотвествии с требованием ГОСТ 1510-2022.</span></div>
+                  <div class="card-step s-steps__card-step _area_4"><span class="card-step__number">#4 </span><span class="card-step__text">При подготовке жд цистерн под налив нефтепродуктами производится устранение коммерческих браков.</span></div>
+                </div>
+              </div>
+              <div class="s-steps__side-right">
+                <div class="card-step s-steps__card-step _area_1"><span class="card-step__number">#1 </span><span class="card-step__text">Цистерны из-под светлых нефтепродуктов промываются горячим моющим раствором температурой до 90 градусов.</span></div>
+                <div class="card-step s-steps__card-step _area_2"><span class="card-step__number">#2 </span><span class="card-step__text">Цистерны из-под темных нефтепродуктов обрабатываются паром с температурой 115 градусов.</span></div>
+                <div class="card-step s-steps__card-step _area_5"><span class="card-step__number">#5 </span><span class="card-step__text">Выдача акта о годности железнодорожных цистерн под налив, при подготовке цистерны в ремонт — выдача акта о проверке на взрывобезопасность газовоздушной среды.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section s-about" id="about">
+          <div class="container">
+            <div class="s-about__content">
+              <h2 class="subtitle">О компании</h2>
+              <div class="s-about__text">
+                <p class="text">Компания ООО «Сибирь» оказывает услуги по пропарке, промывке железнодорожных цистерн согласно ГОСТ 1510-2022.</p>
+                <p class="text">У нас большой опыт работы, имеем умеренные цены и гарантию.</p>
+                <p class="text">Штатный персонал позволяет выполнить работу в приемлемые сроки.</p>
+              </div>
+              <div class="s-about__image"><img src="assets/media/about.png" alt></div>
+              <div class="s-about__contacts"><a href="http://wa.me/79236012718">
+                  <svg>
+                    <use xlink:href="assets/icons/default/sprite.svg#wt"></use>
+                  </svg></a>
+                <div class="s-about__phones"><a class="s-about__link" href="tel:+7(923)6012718">+7 (923) 601-27-18</a><a class="s-about__link" href="tel:+7(3842)900527">+7 (3842) 90-05-27</a></div>
+              </div>
+              <div class="s-about__subtext">Или пишите</div><a class="s-about__link" href="mailto:sibir@list.ru">sibir@list.ru</a>
+            </div>
+          </div>
+        </div>
+        <div class="section s-map" id="map">
+          <div class="container">
+            <div class="s-map__map"></div>
+            <div class="s-map__content">
+              <div class="s-map__side-left"><span class="s-map__address">Новосибирская обл.<br>ст. Болотная Зап-Сиб ж. д.</span><span class="s-map__data">ОГРН: 1146733017650</span><span class="s-map__data">ИНН: 6732078775</span></div>
+              <div class="s-map__side-right"><a class="s-map__link" href="mailto:sibir@list.ru">sibir@list.ru</a><span class="s-map__ps">© ООО «Сибирь» — 2024</span></div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+      <div class="layout__footer">
+      </div>
+    </div>
     <script src="js/index.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cdf83e1f-cc62-4a17-98bd-ebbdb779e750&amp;lang=ru_RU" type="text/javascript"></script>
   </body>
 </html>
