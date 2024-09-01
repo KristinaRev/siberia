@@ -733,12 +733,8 @@ html {
 }
 
 @media only screen and (max-width: 1550px) {
-  .header .header__nav ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 10px;
+  .container {
+    padding: 0 80px;
   }
 
   .s-about__image {
@@ -769,7 +765,15 @@ html {
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1119px) {
+  .header .header__nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .s-promo h1 {
     font-size: 40px;
     line-height: 50px;
