@@ -13,6 +13,10 @@
     border-top: 1px solid config.$colors-purple;
     width: 40%;
     top: 0;
+
+    @media only screen and (max-width: config.$bp-ms) {
+      display: none;
+    }
   }
 
   &:before {
@@ -26,6 +30,9 @@
   &__content {
     display: flex;
 
+    @media only screen and (max-width: config.$bp-ms) {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -35,6 +42,12 @@
     display: flex;
     justify-content: flex-end;
 
+    @media only screen and (max-width: config.$bp-ms) {
+      border: none;
+      padding: 40px 16px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   h1 {
@@ -44,7 +57,21 @@
     line-height: 70.2px;
     text-align: left;
     color: config.$colors-black;
-    max-width: 832px
+    max-width: 832px;
+
+    @media only screen and (max-width: config.$bp-ml) {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    @media only screen and (max-width: config.$bp-md) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    @media only screen and (max-width: config.$bp-ms) {
+      text-align: center;
+    }
   }
 
   &__button-container {
@@ -54,6 +81,23 @@
     border-top: 1px solid config.$colors-purple;
     border-bottom: 1px solid config.$colors-gray-light;
     width: 45%;
+
+    @media only screen and (max-width: config.$bp-ml) {
+      padding-left: 30px;
+    }
+
+    @media only screen and (max-width: config.$bp-md) {
+      padding-left: 16px;
+    }
+
+    @media only screen and (max-width: config.$bp-ms) {
+      padding: 20px;
+      width: 100%;
+      border-bottom: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -61,6 +105,10 @@
     width: 100vw;
     overflow: hidden;
     border-top: 1px solid config.$colors-gray-light;
+
+    @media only screen and (max-width: config.$bp-ms) {
+      height: 400px;
+    }
 
     img {
       width: 100%;

@@ -8,6 +8,12 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
+
+    @media only screen and (max-width: config.$bp-ms) {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
   &__benefit {

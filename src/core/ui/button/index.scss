@@ -12,6 +12,11 @@
   white-space: nowrap;
   transition: .3s ease;
   border-radius: 100px;
+
+  @media only screen and (max-width: config.$bp-md) {
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
 
 .button._theme_purple {

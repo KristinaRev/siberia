@@ -14,6 +14,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 828px;
+
+    @media only screen and (max-width: config.$bp-sm) {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
   }
 
   &__side-left {
@@ -21,6 +27,15 @@
     flex-direction: column;
     padding-right: 124px;
     border-right: 2px solid config.$colors-purple;
+
+    @media only screen and (max-width: config.$bp-md) {
+      padding-right: 40px;
+    }
+
+    @media only screen and (max-width: config.$bp-sm) {
+      padding-right: 0;
+      border-right: none;
+    }
   }
 
   &__address {
@@ -42,6 +57,14 @@
     display: flex;
     flex-direction: column;
     padding-left: 124px;
+
+    @media only screen and (max-width: config.$bp-md) {
+      padding-left: 40px;
+    }
+
+    @media only screen and (max-width: config.$bp-sm) {
+      padding-left: 0;
+    }
   }
 
   &__link {

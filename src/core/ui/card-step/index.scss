@@ -32,6 +32,10 @@
     line-height: 62px;
     text-align: left;
     color: config.$colors-black;
+
+    @media only screen and (max-width: config.$bp-ml) {
+      display: none;
+    }
   }
 
   &__text {

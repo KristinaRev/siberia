@@ -33,6 +33,9 @@
         list-style-type: none;
 
         a {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 32.68px;
           text-decoration: none;
           white-space: nowrap;
           color: config.$colors-black;
@@ -64,6 +67,50 @@
 
       &:hover {
         opacity: .5;
+      }
+    }
+  }
+
+  @media only screen and (max-width: config.$bp-xl) {
+    .header__nav{
+
+      ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: config.$bp-md) {
+    .header__nav{
+      display: none;
+    }
+
+    .header__logo {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    .header__contacts {
+
+      a {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: config.$bp-sm) {
+    .header__logo {
+      font-size: 22px;
+      line-height: 26px;
+    }
+
+    .header__contacts {
+
+      a {
+        font-size: 16px;
+        line-height: 18px;
       }
     }
   }

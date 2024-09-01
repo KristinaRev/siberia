@@ -8,7 +8,11 @@
   margin: 0 auto;
   padding: 0 min(16.4vw, 315px);
 
-  @media only screen and (max-width: config.$bp-md) {
+  @media only screen and (max-width: config.$bp-lg) {
+    padding: 0 40px;
+  }
 
+  @media only screen and (max-width: config.$bp-sm) {
+    padding: 0 20px;
   }
 }

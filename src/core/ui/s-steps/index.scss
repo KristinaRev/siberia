@@ -7,6 +7,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @media only screen and (max-width: config.$bp-ml) {
+      flex-direction: column;
+      display: flex;
+    }
   }
 
   &__title-block {
@@ -28,12 +33,24 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
+
+    @media only screen and (max-width: config.$bp-sm) {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &__steps-left {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width: config.$bp-sm) {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
   }
 
   &__card-step {
@@ -44,6 +61,12 @@
 
     &._area_2 {
       grid-area: 1 / 2 / 2 / 3;
+    }
+
+    &._area_3 {
+    }
+
+    &._area_4 {
     }
 
     &._area_5 {
