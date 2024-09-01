@@ -1,0 +1,27 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.card-step {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 26px;
+  background: config.$colors-bg;
+  border-bottom: 2px solid  config.$colors-purple;
+
+  &__number {
+    font-family: config.$font-secondary;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+    text-align: left;
+    color: config.$colors-black;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    color: config.$colors-black;
+  }
+}

@@ -8,6 +8,9 @@
 @use '../core/ui/button';
 @use '../core/ui/s-benefits';
 @use '../core/ui/section';
+@use '../core/ui/s-steps';
+@use '../core/ui/card-step';
+@use '../core/ui/typography';
 
 @include lib.font("OpenSans", 300, "OpenSans-Light");
 @include lib.font("OpenSans", 400, "OpenSans-Regular");
