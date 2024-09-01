@@ -1,7 +1,0 @@
-mixin cardStep(params)
-    -
-        const classes = params.mix ? `card-step ${params.mix}` : 'card-step';
-
-    div(class=classes)
-        span.card-step__number!= `#${params.number} `
-        span.card-step__text!= params.text
