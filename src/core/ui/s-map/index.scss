@@ -1,0 +1,69 @@
+@use '../../config/scss' as config;
+@use '../../lib/scss' as lib;
+
+.s-map {
+
+  &__map {
+    width: 100%;
+    height: 500px;
+    border: 2px solid config.$colors-purple;
+  }
+
+  &__content {
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 828px;
+  }
+
+  &__side-left {
+    display: flex;
+    flex-direction: column;
+    padding-right: 124px;
+    border-right: 2px solid config.$colors-purple;
+  }
+
+  &__address {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 31px;
+    text-align: left;
+    color: config.$colors-black;
+    margin-bottom: 15px;
+  }
+
+  &__data {
+    font-size: 22px;
+    line-height: 31px;
+    text-align: left;
+  }
+
+  &__side-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 124px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: config.$font-secondary;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41.6px;
+    text-align: left;
+    color: config.$colors-purple;
+    transition: .3s ease;
+    margin-bottom: 15px;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__ps {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+    color: config.$colors-black;
+  }
+}
