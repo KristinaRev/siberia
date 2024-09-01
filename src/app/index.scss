@@ -11,6 +11,7 @@
 @use '../core/ui/s-steps';
 @use '../core/ui/card-step';
 @use '../core/ui/typography';
+@use '../core/ui/s-about';
 
 @include lib.font("OpenSans", 300, "OpenSans-Light");
 @include lib.font("OpenSans", 400, "OpenSans-Regular");
