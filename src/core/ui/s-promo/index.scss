@@ -6,11 +6,11 @@
   position: relative;
   width: 100%;
 
-  &:before, &:after {
+  &:before {
     content: '';
     position: absolute;
-    height: 1px;
-    border-top: 1px solid config.$colors-purple;
+    height: 2px;
+    border-top: 2px solid config.$colors-purple;
     width: 40%;
     top: 0;
 
@@ -23,10 +23,6 @@
     left: 0;
   }
 
-  &:after {
-    right: 0;
-  }
-
   &__content {
     display: flex;
 
@@ -36,15 +32,39 @@
   }
 
   &__title {
-    border-bottom: 1px solid config.$colors-purple;
-    border-right: 1px solid config.$colors-purple;
-    padding: 57px 16px 57px 0;
+    border-right: 2px solid config.$colors-purple;
+    padding: 57px 70px 57px 0;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      border-bottom: 2px solid config.$colors-purple;
+      width: 100vw;
+      bottom: 0;
+      right: 0;
+
+      @media only screen and (max-width: config.$bp-ms) {
+        right: -90px;
+        width: calc(100vw + 180px);
+        border-bottom: 2px solid config.$colors-gray-light;
+      }
+    }
+
+    @media only screen and (max-width: config.$bp-ml) {
+      padding-right: 30px;
+    }
+
+    @media only screen and (max-width: config.$bp-md) {
+      padding-right: 16px;
+    }
 
     @media only screen and (max-width: config.$bp-ms) {
       border: none;
-      padding: 40px 16px;
+      padding: 40px 20px 40px 16px;
       justify-content: center;
       align-items: center;
     }
@@ -57,7 +77,6 @@
     line-height: 70.2px;
     text-align: left;
     color: config.$colors-black;
-    max-width: 832px;
 
     @media only screen and (max-width: config.$bp-ml) {
       font-size: 40px;
@@ -78,9 +97,23 @@
     display: flex;
     align-items: center;
     padding-left: 70px;
-    border-top: 1px solid config.$colors-purple;
-    border-bottom: 1px solid config.$colors-gray-light;
+    border-bottom: 2px solid config.$colors-gray-light;
     width: 45%;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      border-top: 2px solid config.$colors-purple;
+      width: 100vw;
+      top: 0;
+      left: 0;
+
+      @media only screen and (max-width: config.$bp-ms) {
+        display: none;
+      }
+    }
 
     @media only screen and (max-width: config.$bp-ml) {
       padding-left: 30px;
@@ -104,10 +137,14 @@
     height: 850px;
     width: 100vw;
     overflow: hidden;
-    border-top: 1px solid config.$colors-gray-light;
+    border-top: 2px solid config.$colors-gray-light;
 
     @media only screen and (max-width: config.$bp-ms) {
       height: 400px;
+    }
+
+    @media only screen and (max-width: config.$bp-sm) {
+      height: calc(100vh - 345px);
     }
 
     img {

@@ -14,6 +14,16 @@
     }
   }
 
+  &__cards-mobile {
+    display: none;
+
+    @media only screen and (max-width: config.$bp-ml) {
+      flex-direction: column;
+      display: flex;
+      gap: 30px;
+    }
+  }
+
   &__title-block {
     display: flex;
     flex-direction: column;
@@ -34,10 +44,8 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
 
-    @media only screen and (max-width: config.$bp-sm) {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    @media only screen and (max-width: config.$bp-ml) {
+      display: none;
     }
   }
 
@@ -46,10 +54,8 @@
     gap: 30px;
     grid-template-columns: repeat(2, 1fr);
 
-    @media only screen and (max-width: config.$bp-sm) {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
+    @media only screen and (max-width: config.$bp-ml) {
+      display: none;
     }
   }
 
