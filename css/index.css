@@ -114,6 +114,10 @@
   color: #6E62FF;
 }
 
+.header__link-mobile {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -929,9 +933,21 @@ html {
     line-height: 26px;
   }
 
-  .header .header__contacts a {
-    font-size: 16px;
-    line-height: 18px;
+  .header .header__contacts {
+    display: none;
+  }
+
+  .header .header__link-mobile {
+    display: block;
+    width: 32px;
+    height: 32px;
+    color: #232323;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+
+  .header .header__link-mobile:hover {
+    color: #6E62FF;
   }
 
   .container {
