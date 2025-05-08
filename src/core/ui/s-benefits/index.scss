@@ -31,6 +31,16 @@
       font-weight: 600;
       line-height: 30.81px;
       text-align: center;
+
+        a {
+          color: config.$colors-purple;
+          text-decoration: none;
+          transition: .3s ease;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
     }
 
     &:after {
